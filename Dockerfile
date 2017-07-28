@@ -55,5 +55,5 @@ RUN yum grouperase 'Development Tools' -y
 RUN yum erase libmicrohttpd-devel libopenzwave-devel systemd-container-devel -y
 
 USER ozwcp_user
-EXPOSE 8008
-ENTRYPOINT ["/home/ozwcp_user/open-zwave-control-panel/ozwcp", "-p 8008"]
+EXPOSE 8088
+ENTRYPOINT ["/home/ozwcp_user/open-zwave-control-panel/ozwcp", "-p 8088"]
